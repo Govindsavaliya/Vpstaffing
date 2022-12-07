@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta property="og:title" content="VP Staffing : The Concierge Agency" />
+    <meta property="og:image"content="https://www.vpstaffingagency.com/images/images/ogimage.png" />
+
+    <meta property="og:url" content="https://www.vpstaffingagency.com/" />
+    <meta property="og:title" content="VP Staffing : The Concierge Agency">
+    <meta property="og:site_name" content="vpstaffingagency" />
+
+    <!-- font  -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="./css/animate.css" />
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!----------Custom Css--------->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!----------Media Css--------->
+    <link rel="stylesheet" href="./css/media.css">
+
+    <!--fav-icon--------->
+    <link rel="shortcut icon" href="images/stethoscope.png">
+    <title>Apply Now</title>
+
+    <style>
+         #alert {
+            z-index: 1;
+            position: fixed;
+            top: 149px;
+            right: 5px;
+            /* width: 100%; */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <%if(message.length) { %>
+        <div class="alert alert-success dfix" id="alert">
+            <%=message%>
+        </div>
+        <%}%>
+
+            <%if(messages.length) { %>
+                <div class="alert alert-danger dfix" id="alert">
+                    <%=messages%>
+                </div>
+                <%}%>
+
+                    <!----------------------------------------------------------- Header Section ---------------------------------------------------------->
+                    <header>
+                        <div class="bgHeader header"></div>
+                        <div class="container">
+                            <div class="row mainusMrg">
+                                <div
+                                    class="col-lg-6 d-flex justify-content-center justify-content-lg-start align-items-start py-3">
+                                    <div
+                                        class="contact-info mailText d-flex flex-wrap justify-content-center align-items-center">
+                                        <a href="tel:(786) 715-6132" class="px-1 whiteSpace wow fadeInDown"><i
+                                                class="fa-solid fa-phone text-black pe-2"></i>(786) 715-6132</a>
+                                        <div class="mx-2 wow fadeInDown">|</div>
+                                        <a href="mailto: valery@vpstaffingagency.com" target="_blank"
+                                            class="px-1 whiteSpace wow fadeInDown"><i
+                                                class="fa-solid fa-envelope pe-2"></i>
+                                            valery@vpstaffingagency.com</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div
+                                        class="d-none d-lg-flex justify-content-lg-end align-items-center text-white py-3 px-0">
+                                        <div class="">
+                                            <a href="https://www.facebook.com/profile.php?id=100087023400204"
+                                                class="facebook px-2 rounded-circle wow fadeInDown"
+                                                data-wow-delay="0.1s"><img src="./images/facebook.png" alt="Facebook"
+                                                    class="img-fluid" draggable="false"></a>
+                                            <a href="https://www.instagram.com/invites/contact/?i=vrrzjc15mt6g&utm_content=pe8ugr4"
+                                                class="instagram px-2 rounded-circle wow fadeInDown"
+                                                data-wow-delay="0.2s"><img src="./images/instagram.png" alt="Instagram"
+                                                    class="img-fluid" draggable="false"></a>
+                                            <a href="https://www.linkedin.com/company/vp-staffing-agency/"
+                                                class="linkedin px-2 rounded-circle wow fadeInDown"
+                                                data-wow-delay="0.6s"><img src="./images/linkedin.png" alt="Linkedin"
+                                                    class="img-fluid" draggable="false"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row px-4 m-0">
+                                    <div class="d-flex  justify-content-between align-items-center mainNav header px-4">
+
+                                        <a href="/" class="wow fadeIn" data-wow-delay="0.1s">
+                                            <img src="images/Final_Logo.png" alt="Logo" class="img-fluid HeaderLogo "
+                                                draggable="false">
+                                        </a>
+
+                                        <nav class="navbar ms-lg-auto p-0 ">
+                                            <ul class="d-flex m-0 navbar-list">
+                                                <div class="close-navbar-btn">
+                                                    <i class="fa-solid fa-xmark close-outline"></i>
+                                                </div>
+
+
+                                                <li class="me-xl-3 me-md-2 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.2s">
+                                                    <a class="navbar-link active navItem" href="/">HOME</a>
+                                                </li>
+                                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.3s">
+                                                    <a class="navbar-link navItem" href="/applynow">APPLY NOW</a>
+                                                </li>
+                                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn" data-wow-delay="0.5s">
+                                                    <a class="navbar-link navItem" href="/goverment-solutions">Government
+                                                        Solutions</a>
+                                                </li>
+                                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.4s">
+                                                    <a class="navbar-link navItem" href="/about">ABOUT US</a>
+                                                </li>
+                                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.6s">
+                                                    <a class="navbar-link navItem" href="/contactus">CONTACT US</a>
+                                                </li>
+                                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.7s">
+                                                    <a class="navbar-link navItem" href="/client">CLIENT</a>
+                                                </li>
+                                                <li class="ms-xl-3 ms-md-2 mt-0 mt-md-1 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.8zs">
+                                                    <a class="navbar-link navItem d-none d-lg-block"
+                                                        href="#">RESOURCES</a>
+                                                    <ul class="PetaMenu text-center poREl">
+                                                        <li><a href="/referfriend">REFER A FRIEND</a></li>
+                                                        <li><a href="/benifits">BENEFITS</a></li>
+                                                    </ul>
+                                                </li>
+
+                                            </ul>
+                                        </nav>
+                                        <div class="mobile-navbar-btn_one">
+                                            <i name="menu-outline" class="fa-solid fa-bars"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </header>
+
+                    <!------------------------------------------------------------- Main Banner Section ----------------------------------------------------------------->
+
+
+                    <section class="overflow-hidden VectorSmartObjectBGImg marTop">
+                        <div class="container">
+                            <div class="row d-flex justify-content-center align-items-center paddingTop">
+
+                                <div
+                                    class="col-lg-9 col-md-9 d-flex justify-content-center align-items-center paddingTop paddingBottom">
+                                    <div class="parent">
+                                        <div class="twins">
+                                            <div class="text wow fadeInDown" data-wow-delay="0.1s">
+                                                <div>FILL OUT THE FORM TO GET STARTED</div>
+                                            </div>
+                                            <hr class="m-0">
+                                            <div class="text1 pb-4 wow fadeInDown" data-wow-delay="0.3s">
+                                                <div>Nursing, Allied Health, Locum Tenens</div>
+                                            </div>
+                                            <form action="/apply/applyInsert" class="d-flex flex-column"
+                                                enctype="multipart/form-data" method="post">
+
+                                                <div class="d-flex flex-column wow fadeInDown" data-wow-delay="0.4s">
+                                                    <input type="text" id="Full Name" name="fullName"
+                                                        placeholder="Full Name" class="applyInput-box" required>
+                                                </div>
+
+                                                <div class="d-flex flex-column wow fadeInDown" data-wow-delay="0.5s">
+                                                    <input type="email" id="Email" name="email"
+                                                        placeholder="Email Address" class="applyInput-box" required>
+                                                </div>
+
+                                                <div class="d-flex flex-column wow fadeInDown" data-wow-delay="0.6s">
+                                                    <input type="number" id="Phone" name="phone"
+                                                        placeholder="Phone Number" class="applyInput-box" required>
+                                                </div>
+
+                                                <div class="d-flex flex-column wow fadeInDown" data-wow-delay="0.7s">
+                                                    <input id="zip" name="zipCode" type="number" inputmode="numeric"
+                                                        pattern="[0-9]*" placeholder="Zip Code" class="applyInput-box"
+                                                        required>
+                                                </div>
+
+                                                <div class="d-flex flex-column wow fadeInDown" data-wow-delay="0.8s">
+                                                    <select class="search-box " name="title" required>
+                                                        <option value="" disabled selected class="PetaTitle">Select Your Title</option>
+                                                        <option value="Allied Professional">Allied Professional</option>
+                                                        <option value="Non Clinical">Non-Clinical</option>
+                                                        <option value="MA">MA</option>
+                                                        <option value="Social Worker">Social Worker</option>
+                                                        <option value="THERAPIST">THERAPIST</option>
+                                                        <option value="LPN">LPN</option>
+                                                        <option value="TECH">TECH</option>
+                                                        <option value="CNA">CNA</option>
+                                                        <option value="NP">NP</option>
+                                                        <option value="PA">PA</option>
+                                                        <option value="PCA">PCA</option>
+                                                        <option value="PCT">PCT</option>
+                                                        <option value="RN">RN</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="d-flex flex-column wow fadeInDown" data-wow-delay="0.9s">
+                                                    <select class="search-box" name="speciality" required>
+                                                        <option value="" disabled selected class="PetaTitle">Select Your Specialty</option>
+                                                        <option value="ANESTHESIA TECH">ANESTHESIA TECH</option>
+                                                        <option value="CASE MANAGEMENT">CASE MANAGEMENT</option>
+                                                        <option value="CATH LAB">CATH LAB</option>
+                                                        <option value="CLINIC">CLINIC</option>
+                                                        <option value="CNA">CNA</option>
+                                                        <option value="Corrections">Corrections</option>
+                                                        <option value="DIALYSIS TECH">DIALYSIS TECH</option>
+                                                        <option value="EDUCATOR">EDUCATOR</option>
+                                                        <option value="EKG Tech">EKG Tech</option>
+                                                        <option value="Emergency Room">Emergency Room</option>
+                                                        <option value="ENDOSCOPY">ENDOSCOPY</option>
+                                                        <option value="Endoscopy Tech">Endoscopy Tech</option>
+                                                        <option value="EP Lab Tech">EP Lab Tech</option>
+                                                        <option value="ER Tech">ER Tech</option>
+                                                        <option value="ER-CNA">ER-CNA</option>
+
+                                                        <option value="ER-PCA">ER-PCA</option>
+                                                        <option value="HEMO-DIALYSIS">HEMO-DIALYSIS</option>
+                                                        <option value="Home Health">Home Health</option>
+
+                                                        <option value="Home Health - Visiting">Home Health - Visiting
+                                                        </option>
+                                                        <option value="ICU">ICU</option>
+                                                        <option value="Labor & Delivery">Labor & Delivery</option>
+                                                        <option value="Long Term Care-CNA">Long Term Care-CNA</option>
+                                                        <option value="LPN">LPN</option>
+                                                        <option value="LPN-Hospital">LPN-Hospital</option>
+                                                        <option value="LTC">LTC</option>
+                                                        <option value="LTC - Supervisor">LTC - Supervisor</option>
+                                                        <option value="LTC-LPN">LTC-LPN</option>
+                                                        <option value="Management">Management</option>
+                                                        <option value="Medical Surgical">Medical Surgical</option>
+                                                        <option value="Oncology">Oncology</option>
+                                                        <option value="Motherbaby">Motherbaby</option>
+                                                        <option value="New Grad-CNA">New Grad-CNA</option>
+                                                        <option value="New Grad-LPN">New Grad-LPN</option>
+
+
+                                                        <option value="NICU (Neonatal ICU)">NICU (Neonatal ICU)</option>
+                                                        <option value="NP">NP</option>
+                                                        <option value="OB Tech">OB Tech</option>
+                                                        <option value="Operating Room">Operating Room</option>
+                                                        <option value="OR Tech">OR Tech</option>
+                                                        <option value="PA">PA</option>
+                                                        <option value="PACU">PACU</option>
+                                                        <option value="PCA">PCA</option>
+                                                        <option value="PCT">PCT</option>
+                                                        <option value="PCT-EKG">PCT-EKG</option>
+                                                        <option value="PEDIATRICS">PEDIATRICS</option>
+                                                        <option value="PEDIATRICS-HOMECARE">PEDIATRICS - HOMECARE
+                                                        </option>
+                                                        <option value="Private-Duty-LPN">Private Duty-LPN</option>
+                                                        <option value="Psych-CNA">Psych-CNA</option>
+
+                                                        <option value="Psychiatry">Psychiatry</option>
+                                                        <option value="Radiology">Radiology</option>
+                                                        <option value="Radiology Tech">Radiology Tech</option>
+                                                        <option value="RN - New Grad">RN - New Grad</option>
+                                                        <option value="School">School</option>
+                                                        <option value="Sitter">Sitter</option>
+                                                        <option value="Sterile Processing Tech">Sterile Processing Tech
+                                                        </option>
+                                                        <option value="Telemetry/PCU">Telemetry/PCU</option>
+                                                        <option value="NICU">NICU</option>
+                                                        <option value="Clerk - Billing Representative">Clerk - Billing
+                                                            Representative</option>
+                                                        <option value="Certified-Medical-Coders">Certified Medical
+                                                            Coders</option>
+                                                        <option value="Clerk">Clerk</option>
+                                                        <option value="Dental Assistant">Dental Assistant</option>
+                                                        <option value="Pharmacist">Pharmacist</option>
+
+                                                        <option value="Pharmacy Technician">Pharmacy Technician</option>
+                                                        <option value="Phlebotomist">Phlebotomist</option>
+                                                        <option value="Recreation Aide">Recreation Aide</option>
+                                                        <option value="Security Guard">Security Guard</option>
+                                                        <option value="Home Health - Oasis">Home Health - Oasis</option>
+                                                        <option value="Home Health - UAS Assessments">Home Health - UAS
+                                                            Assessments</option>
+                                                        <option value="Audits - Infection Control">Audits - Infection
+                                                            Control</option>
+                                                        <option value="Clinic - Amb Care">Clinic - Amb Care</option>
+                                                        <option value="Clinic - Amb Surg">Clinic - Amb Surg</option>
+                                                        <option value="Clinic - Covid Testing">Clinic - Covid Testing
+                                                        </option>
+                                                        <option value="Clinic - Flu/Covid Vaccine">Clinic - Flu/Covid
+                                                            Vaccine</option>
+                                                        <option value="Detox">Detox</option>
+                                                        <option value="GROUP HOME">GROUP HOME</option>
+                                                        <option value="Home Health - Hospice">Home Health - Hospice
+                                                        </option>
+                                                        <option value="IV TEAM">IV TEAM</option>
+                                                        <option value="Medical Surgical - Hospice">Medical Surgical -
+                                                            Hospice</option>
+                                                        <option value="Monitor Tech">Monitor Tech</option>
+
+                                                        <option value="Management - Director of Nursing">Management -
+                                                            Director of Nursing</option>
+                                                        <option value="Beautician">Beautician</option>
+
+                                                        <option value="Cath Lab Tech">Cath Lab Tech</option>
+                                                        <option value="Central Supply Assistant">Central Supply
+                                                            Assistant</option>
+                                                        <option value="Certified Trauma Registrar">Certified Trauma
+                                                            Registrar</option>
+
+                                                        <option value="Certified Tumor Registrar">Certified Tumor
+                                                            Registrar</option>
+                                                        <option value="Clerk - Credentialing Coordinator">Clerk -
+                                                            Credentialing Coordinator</option>
+
+                                                        <option value="Clerk - Data Entry Specialist">Clerk - Data Entry
+                                                            Specialist</option>
+                                                        <option value="Clerk - Graphics Designer">Clerk - Graphics
+                                                            Designer</option>
+                                                        <option value="Clerk - IT">Clerk - IT</option>
+                                                        <option value="Clerk - Navigation Associate">Clerk - Navigation
+                                                            Associate</option>
+                                                        <option value="Clerk - Recruiter">Clerk - Recruiter</option>
+                                                        <option value="Clerk - Staff Accountant">Clerk - Staff
+                                                            Accountant</option>
+                                                        <option value="Clinical Lab Scientist/Technician">Clinical Lab
+                                                            Scientist/Technician</option>
+                                                        <option value="CLT - Blood Bank">CLT - Blood Bank</option>
+                                                        <option value="CLT - Chemistry">CLT - Chemistry</option>
+                                                        <option value="CLT - Supervisor">CLT - Supervisor</option>
+                                                        <option value="Cook">Cook</option>
+                                                        <option value="CT Tech (Bluesky)">CT Tech (Bluesky)</option>
+                                                        <option value="CV OR Tech">CV OR Tech</option>
+
+                                                        <option value="Dental Hygienist">Dental Hygienist</option>
+                                                        <option value="Dietary Aid">Dietary Aid</option>
+                                                        <option value="Echo Tech">Echo Tech</option>
+                                                        <option value="Emergency Room - Pediatrics">Emergency Room -
+                                                            Pediatrics</option>
+                                                        <option value="Patient Escort">Patient Escort</option>
+                                                        <option value="Histology Tech">Histology Tech</option>
+                                                        <option value="Housekeeper">Housekeeper</option>
+                                                        <option value="Infection Preventionist">Infection Preventionist
+                                                        </option>
+                                                        <option value="IV Team - Anesthesia">IV Team - Anesthesia
+                                                        </option>
+                                                        <option value="Laboratory Assistant">Laboratory Assistant
+                                                        </option>
+                                                        <option value="Mammography Tech">Mammography Tech</option>
+                                                        <option value="Manager">Manager</option>
+                                                        <option value="Neurodiagnostic Technician/EEG">Neurodiagnostic
+                                                            Technician/EEG</option>
+                                                        <option value="Non Clinical Manager">Non Clinical Manager
+                                                        </option>
+                                                        <option value="Nuclear Medicine Technologist (Bluesky)">Nuclear
+                                                            Medicine Technologist (Bluesky)</option>
+                                                        <option value="Ophthalmology Tech">Ophthalmology Tech</option>
+                                                        <option value="Registered Dietician">Registered Dietician
+                                                        </option>
+                                                        <option value="Respiratory Therapist">Respiratory Therapist
+                                                        </option>
+                                                        <option value="Sleep Technologist">Sleep Technologist</option>
+                                                        <option value="Stock Person">Stock Person</option>
+                                                        <option value="Telemetry Tech">Telemetry Tech</option>
+                                                        <option value="Ultrasound Tech/Sonographer">Ultrasound
+                                                            Tech/Sonographer</option>
+                                                        <option value="Warehouse Manager"> Warehouse Manager</option>
+                                                        <option value="X-ray Tech">X-ray Tech</option>
+                                                        <option value="Activity Therapist">Activity Therapist</option>
+                                                        <option value="Case Management (BA)"> Case Management (BA)
+                                                        </option>
+                                                        <option value="Case Management (MA)">Case Management (MA)
+                                                        </option>
+                                                        <option value="Clerk - Language Coordinator">Clerk - Language
+                                                            Coordinator</option>
+                                                        <option value="Creative Art Therapist">Creative Art Therapist
+                                                        </option>
+                                                        <option value="EMT - Paramedic">EMT - Paramedic</option>
+                                                        <option value="Mortuary Technician">Mortuary Technician</option>
+                                                        <option value="MRI Tech">MRI Tech</option>
+                                                        <option value="Radiation Therapist">Radiation Therapist</option>
+                                                        <option value="Rehab Aide">Rehab Aide</option>
+                                                        <option value="Speech Pathologist (Speech Therapist Hospitals)">
+                                                            Speech Pathologist (Speech Therapist Hospitals)</option>
+                                                        <option value="MRDD">MRDD</option>
+                                                        <option value="MSC">MSC</option>
+                                                        <option value="Occupational Therapist">Occupational Therapist
+                                                        </option>
+                                                        <option value="OPWDD">OPWDD</option>
+                                                        <option value="ORT- New Grad">ORT- New Grad</option>
+                                                        <option value="PHD">PHD</option>
+                                                        <option value="Physical Therapist">Physical Therapist</option>
+                                                        <option value="Psych">Psych</option>
+                                                        <option value="Psychiatric Tech">Psychiatric Tech</option>
+                                                        <option value="Rehab">Rehab</option>
+                                                        <option value="SOCIAL WORKER">SOCIAL WORKER</option>
+                                                        <option value="Supply Data Analyst">Supply Data Analyst</option>
+                                                        <option value="THERAPIST">THERAPIST</option>
+                                                        <option value="Wound Care">Wound Care</option>
+                                                        <option value="DRIVER">DRIVER</option>
+                                                        <option value="Speech Therapist">Speech Therapist</option>
+                                                        <option value="LCSW">LCSW</option>
+                                                        <option value="LMSW">LMSW</option>
+                                                        <option value="Oncology – Chemo Infusion">Oncology – Chemo
+                                                            Infusion</option>
+                                                        <option value="Food Services">Food Services</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="d-flex flex-column wow fadeInDown" data-wow-delay="1s">
+                                                    <div fro="fileUpload" class="applynowText3 pt-2">Upload Resume:
+                                                    </div>
+                                                    <input type="file" id="fileUpload" class="applyInput-file"
+                                                        name="file" required>
+                                                </div>
+
+
+                                                <div class="text-center applyText pb-4 fw-bold pt-2 wow fadeInDown"
+                                                    data-wow-delay="1.1s">Are you ready to make a difference?
+                                                </div>
+
+                                                <div class="d-flex flex-column fw-bold wow fadeInDown"
+                                                    data-wow-delay="1.2s">
+                                                    <button type="submit" class="vafSubmit button-3">Submit</button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--------------------------------------------------------------- Footer Section ------------------------------------------------------------------>
+
+                    <footer class="footer-section">
+                        <div class="container">
+                            <div class="footer-content ">
+                                <div class="row pt-5  wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="col-xl-4 col-lg-4 px-3">
+                                        <div
+                                            class="footer-logo d-flex justify-content-center justify-content-lg-start align-items-center align-items-lg-center">
+                                            <a href="#">
+                                                <img src="images/Final_Logo1.png" class="img-fluid" draggable="false" alt="logo">
+                                            </a>
+                                        </div>
+                
+                                        <div
+                                            class="footer-widget-heading mb-3 d-flex justify-content-lg-start justify-content-around align-items-center align-items-lg-center">
+                                            <div>Follow Us On</div>
+                                        </div>
+                                        <div class="row footer-widget">
+                                            <div class="col-6 wow fadeIn" data-wow-delay="0.2s">
+                                                <a href="https://www.facebook.com/profile.php?id=100087023400204" target="_blank"
+                                                    class="footer-text d-flex justify-content-start align-items-center">
+                                                    <i class="fa-brands fa-square-facebook me-2"></i>
+                                                    <div class="">Facebook</div>
+                                                </a>
+                                            </div>
+                
+                                            <div class="col-6 wow fadeIn" data-wow-delay="0.4s">
+                                                <a href="https://www.instagram.com/invites/contact/?i=vrrzjc15mt6g&utm_content=pe8ugr4"
+                                                    target="_blank" class="footer-text d-flex justify-content-start align-items-center">
+                                                    <i class="fa-brands fa-square-instagram me-2"></i>
+                                                    <div>Instagram</div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                                                <a href="https://www.linkedin.com/company/vp-staffing-agency/" target="_blank"
+                                                    class="footer-text d-flex justify-content-start align-items-center">
+                                                    <i class="fa-brands fa-linkedin me-2"></i>
+                                                    <div>Linkedin</div>
+                                                </a>
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                
+                                    <div class="col-xl-4 col-lg-4">
+                                        <div class="row py-3 footer-widget">
+                                            <div class="footer-widget-heading mb-3 d-flex justify-content-lg-start justify-content-center align-items-center align-items-lg-center wow fadeIn"
+                                                data-wow-delay="0.1s">
+                                                <div>Services</div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul>
+                                                    <li class="wow fadeIn" data-wow-delay="0.2s"><a href="/"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>HOME</a>
+                                                    </li>
+                                                    <li class="wow fadeIn" data-wow-delay="0.5s"><a href="/applynow"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>APPLY
+                                                            NOW</a></li>
+                                                    <li class="wow fadeIn" data-wow-delay="0.8s"><a href="/goverment-solutions"><i
+                                                                class="fa-solid fa-angles-right"></i>  GOVERNMENT
+                                                            SOLUTIONS</a>
+                                                    </li>
+                                                    <li class="wow fadeIn" data-wow-delay="0.2s"><a href="/about"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>ABOUT US</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                
+                                            <div class="col-sm-6">
+                                                <ul>
+                                                    <li class="wow fadeIn" data-wow-delay="0.6s"><a href="/contactus"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>CONTACT
+                                                            US</a></li>
+                                                    <li class="wow fadeIn" data-wow-delay="0.3s"><a href="/client"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>CLIENT</a>
+                                                    </li>
+                                                    <li class="wow fadeIn" data-wow-delay="0.4s"><a href="/referfriend"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>REFER
+                                                            A FRIEND</a>
+                                                    </li>
+                                                    <li class="wow fadeIn" data-wow-delay="0.7s"><a href="/benifits"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>BENEFITS</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                
+                                    <div class="col-xl-4 col-lg-4">
+                                        <div class="footer-widget-heading mb-3 d-flex justify-content-lg-start justify-content-around align-items-center align-items-lg-center wow fadeIn"
+                                            data-wow-delay="0.1s">
+                                            <div>Contact Info</div>
+                                        </div>
+                                        <div class="footer-text py-2 d-flex justify-content-start align-items-start wow fadeIn"
+                                            data-wow-delay="0.2s">
+                                            <i class="fa-solid fa-phone pe-2"></i>
+                                            <div>(786) 715-6132</div>
+                                        </div>
+                
+                                        <div class="footer-text py-2 d-flex justify-content-start align-items-start wow fadeIn"
+                                            data-wow-delay="0.3s">
+                                            <i class="fa-solid fa-envelope pe-2"></i>
+                                            <div><a href="mailto: valery@vpstaffingagency.com">valery@vpstaffingagency.com</a>
+                                            </div>
+                                        </div>
+                
+                                        <div class="footer-text py-2 d-flex justify-content-start align-items-start wow fadeIn"
+                                            data-wow-delay="0.4s">
+                                            <i class="fa-solid fa-location-dot pe-2"></i>
+                                            <div>
+                                                #1218 1919 Taylor Street STE F Houston, TX 77007.
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright-area">
+                            <div class="container">
+                                <div class="footer-cta pt-3">
+                                </div>
+                
+                                <div class="copyright-text py-3 text-center">
+                                    <p>Copyright © 2022 VP Staffing. All Rights Reserved.<a href="#"></a></p>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </footer>
+</body>
+
+<!-- Wow JS -->
+<script src="./js/wow.min.js"></script>
+<script>
+    const message = `<%= message %>`
+    if (message.length) {
+        setTimeout(() => {
+            var alertNode = document.querySelector('#alert')
+            alertNode.remove()
+        }, 5000);
+    }
+</script>
+
+<script>
+    const messages = `<%= messages %>`
+    if (messages.length) {
+        setTimeout(() => {
+            var alertNode = document.querySelector('#alert')
+            alertNode.remove()
+        }, 5000);
+    }
+</script>
+
+<script>
+    new WOW().init();
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+
+<!-- Script CSS -->
+<script src="./js/app.js"></script>
+
+
+
+
+</html>

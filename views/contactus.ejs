@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <meta property="og:title" content="VP Staffing : The Concierge Agency" />
+    <meta property="og:image"content="https://www.vpstaffingagency.com/images/images/ogimage.png" />
+
+    <meta property="og:url" content="https://www.vpstaffingagency.com/" />
+    <meta property="og:title" content="VP Staffing : The Concierge Agency">
+    <meta property="og:site_name" content="vpstaffingagency" />
+
+    <!-- font  -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="./css/animate.css"/>
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+    <!----------Custom Css--------->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!----------Media Css--------->
+    <link rel="stylesheet" href="./css/media.css">
+
+    <!--fav-icon--------->
+    <link rel="shortcut icon" href="images/stethoscope.png">
+    <title>Contact Us</title>
+    <style>
+         #alert {
+            z-index: 1;
+            position: fixed;
+            top: 149px;
+            right: 5px;
+            /* width: 100%; */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <%if(message.length) { %>
+        <div class="alert alert-success dfix" id="alert">
+            <%=message%>
+        </div>
+        <%}%>
+
+        <%if(messages.length) { %>
+            <div class="alert alert-danger dfix" id="alert">
+                <%=messages%>
+            </div>
+            <%}%>
+
+    <!----------------------------------------------------------- Header Section ---------------------------------------------------------->
+    <header>
+        <div class="bgHeader header"></div>
+        <div class="container">
+            <div class="row mainusMrg">
+                <div
+                    class="col-lg-6 d-flex justify-content-center justify-content-lg-start align-items-start py-3">
+                    <div
+                        class="contact-info mailText d-flex flex-wrap justify-content-center align-items-center">
+                        <a href="tel:(786) 715-6132" class="px-1 whiteSpace wow fadeInDown"><i
+                                class="fa-solid fa-phone text-black pe-2"></i>(786) 715-6132</a>
+                        <div class="mx-2 wow fadeInDown">|</div>
+                        <a href="mailto: valery@vpstaffingagency.com" target="_blank"
+                            class="px-1 whiteSpace wow fadeInDown"><i
+                                class="fa-solid fa-envelope pe-2"></i>
+                            valery@vpstaffingagency.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div
+                        class="d-none d-lg-flex justify-content-lg-end align-items-center text-white py-3 px-0">
+                        <div class="">
+                            <a href="https://www.facebook.com/profile.php?id=100087023400204"
+                                class="facebook px-2 rounded-circle wow fadeInDown"
+                                data-wow-delay="0.1s"><img src="./images/facebook.png" alt="Facebook"
+                                    class="img-fluid" draggable="false"></a>
+                            <a href="https://www.instagram.com/invites/contact/?i=vrrzjc15mt6g&utm_content=pe8ugr4"
+                                class="instagram px-2 rounded-circle wow fadeInDown"
+                                data-wow-delay="0.2s"><img src="./images/instagram.png" alt="Instagram"
+                                    class="img-fluid" draggable="false"></a>
+                            <a href="https://www.linkedin.com/company/vp-staffing-agency/"
+                                class="linkedin px-2 rounded-circle wow fadeInDown"
+                                data-wow-delay="0.6s"><img src="./images/linkedin.png" alt="Linkedin"
+                                    class="img-fluid" draggable="false"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row px-4 m-0">
+                    <div class="d-flex  justify-content-between align-items-center mainNav header px-4">
+
+                        <a href="/" class="wow fadeIn" data-wow-delay="0.1s">
+                            <img src="images/Final_Logo.png" alt="Logo" class="img-fluid HeaderLogo "
+                                draggable="false">
+                        </a>
+
+                        <nav class="navbar ms-lg-auto p-0 ">
+                            <ul class="d-flex m-0 navbar-list">
+                                <div class="close-navbar-btn">
+                                    <i class="fa-solid fa-xmark close-outline"></i>
+                                </div>
+
+
+                                <li class="me-xl-3 me-md-2 menuitem MainNavPad wow fadeIn"
+                                    data-wow-delay="0.2s">
+                                    <a class="navbar-link active navItem" href="/">HOME</a>
+                                </li>
+                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                    data-wow-delay="0.3s">
+                                    <a class="navbar-link navItem" href="/applynow">APPLY NOW</a>
+                                </li>
+                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn" data-wow-delay="0.5s">
+                                    <a class="navbar-link navItem" href="/goverment-solutions">Government
+                                        Solutions</a>
+                                </li>
+                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                    data-wow-delay="0.4s">
+                                    <a class="navbar-link navItem" href="/about">ABOUT US</a>
+                                </li>
+                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                    data-wow-delay="0.6s">
+                                    <a class="navbar-link navItem" href="/contactus">CONTACT US</a>
+                                </li>
+                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                    data-wow-delay="0.7s">
+                                    <a class="navbar-link navItem" href="/client">CLIENT</a>
+                                </li>
+                                <li class="ms-xl-3 ms-md-2 mt-0 mt-md-1 menuitem MainNavPad wow fadeIn"
+                                    data-wow-delay="0.8zs">
+                                    <a class="navbar-link navItem d-none d-lg-block"
+                                        href="#">RESOURCES</a>
+                                    <ul class="PetaMenu text-center poREl">
+                                        <li><a href="/referfriend">REFER A FRIEND</a></li>
+                                        <li><a href="/benifits">BENEFITS</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                        <div class="mobile-navbar-btn_one">
+                            <i name="menu-outline" class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <!------------------------------------------------------------- Main Banner Section ----------------------------------------------------------------->
+
+    <section class=" VectorSmartObjectBGImg marTop">
+        <div class="container">
+            <div class="row paddingTop paddingBottom d-flex justify-content-center align-items-center">
+
+                <div class=" col-xl-6 col-md-10 py-5 d-flex justify-content-center align-items-center wow fadeInLeft order-md-1 order-sm-1 order-1 order-lg-1 order-xl-0" data-wow-delay="0.1s">
+                    <div class="parent">
+                        <div class="twins">
+                            <div class="text wow fadeInDown" data-wow-delay="0.2s">
+                                <div>GET IN TOUCH</div>
+                            </div>
+                            <hr class="m-0">
+                            <div class="text1 wow fadeInDown" data-wow-delay="0.3s">
+                                <div>LET US KNOW HOW WE CAN HELP YOU</div>
+                            </div>
+                            <form action="/contact/userContactInsert" class="d-flex flex-column" method="post">
+
+                                <div class="d-flex flex-column wow fadeInDown" data-wow-delay="0.4s">
+                                    <input type="text" id="FullName" name="fullName" multiple placeholder="Full Name"
+                                        class="popup-box" required>
+                                </div>
+
+                                <div class="d-flex flex-column wow fadeInDown" data-wow-delay="0.5s">
+                                    <input type="email" id="Email" name="email" multiple placeholder="Email"
+                                        class="applyInput-box" required>
+                                </div>
+
+                                <div class="d-flex flex-column wow fadeInDown" data-wow-delay="0.6s">
+                                    <input type="number" id="Phone" name="phone" multiple placeholder="Phone Number"
+                                        class="applyInput-box" required>
+                                </div>
+
+                                <div class="d-flex flex-column wow fadeInDown" data-wow-delay="0.7s">
+                                    <input type="text" id="inquiry" name="inquiry" multiple placeholder="Your inquiry"
+                                        class="popup-box" required>
+                                </div>
+
+                                <div class="d-flex flex-column wow fadeInDown" data-wow-delay="0.8s">
+                                    <input type="text" id="message" name="message" multiple placeholder="Message"
+                                        class="popup-box" required>
+                                </div>
+
+
+                                <button type="submit" class="vafSubmit button-3 wow fadeInDown" data-wow-delay="0.9s">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-md-9 py-5 d-flex justify-content-center align-items-center wow flipInX paddingBottom ">
+                    <div>
+                        <img src="images/Contact us-amico.png" class="img-fluid px-4" draggable="false" alt="Contact Us">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-flex justify-content-end align-items-center align-items-sm-center paddingBottom">
+
+                <div class="col-lg-5 VPText d-flex flex-column justify-content-xl-start align-items-xl-start justify-content-sm-center align-items-sm-center pb-3 order-md-1 order-sm-1 order-xl-0">
+                    <div class="contactFont text-sm-center text-lg-start wow fadeInLeft" data-wow-delay="0.1s">
+                        Vp staffing
+                    </div>
+                    <br>
+                    <div class="contactText text-sm-center text-lg-start wow fadeInLeft" data-wow-delay="0.2s">
+                        #1218 <br> 1919 Taylor Street STE F Houston, TX 77007.
+                    </div>
+                    <br>
+                    <div class="contactText text-sm-center text-lg-start wow fadeInLeft" data-wow-delay="0.3s">
+                        7867156132
+                    </div>
+                </div>
+
+                <div class="col-lg-7 W-100 wow fadeIn" data-wow-delay="0.1s">
+                    <iframe class="contactBox"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.0708034755826!2d-95.38570978455303!3d29.77559413817697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8ad876f6053%3A0x912843f2d9377792!2s1919%20Taylor%20St%20f%2C%20Houston%2C%20TX%2077007%2C%20USA!5e0!3m2!1sen!2sin!4v1660111737615!5m2!1sen!2sin"
+                        width="100%" height="450" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------------------------------------------------- Footer Section ------------------------------------------------------------------>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content ">
+                <div class="row pt-5  wow fadeIn" data-wow-delay="0.1s">
+                    <div class="col-xl-4 col-lg-4 px-3">
+                        <div
+                            class="footer-logo d-flex justify-content-center justify-content-lg-start align-items-center align-items-lg-center">
+                            <a href="#">
+                                <img src="images/Final_Logo1.png" class="img-fluid" draggable="false" alt="logo">
+                            </a>
+                        </div>
+
+                        <div
+                            class="footer-widget-heading mb-3 d-flex justify-content-lg-start justify-content-around align-items-center align-items-lg-center">
+                            <div>Follow Us On</div>
+                        </div>
+                        <div class="row footer-widget">
+                            <div class="col-6 wow fadeIn" data-wow-delay="0.2s">
+                                <a href="https://www.facebook.com/profile.php?id=100087023400204" target="_blank"
+                                    class="footer-text d-flex justify-content-start align-items-center">
+                                    <i class="fa-brands fa-square-facebook me-2"></i>
+                                    <div class="">Facebook</div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 wow fadeIn" data-wow-delay="0.4s">
+                                <a href="https://www.instagram.com/invites/contact/?i=vrrzjc15mt6g&utm_content=pe8ugr4"
+                                    target="_blank" class="footer-text d-flex justify-content-start align-items-center">
+                                    <i class="fa-brands fa-square-instagram me-2"></i>
+                                    <div>Instagram</div>
+                                </a>
+                            </div>
+                            <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="https://www.linkedin.com/company/vp-staffing-agency/" target="_blank"
+                                    class="footer-text d-flex justify-content-start align-items-center">
+                                    <i class="fa-brands fa-linkedin me-2"></i>
+                                    <div>Linkedin</div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="row py-3 footer-widget">
+                            <div class="footer-widget-heading mb-3 d-flex justify-content-lg-start justify-content-center align-items-center align-items-lg-center wow fadeIn"
+                                data-wow-delay="0.1s">
+                                <div>Services</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li class="wow fadeIn" data-wow-delay="0.2s"><a href="/"><i
+                                                class="fa-solid fa-angles-right pe-2"></i>HOME</a>
+                                    </li>
+                                    <li class="wow fadeIn" data-wow-delay="0.5s"><a href="/applynow"><i
+                                                class="fa-solid fa-angles-right pe-2"></i>APPLY
+                                            NOW</a></li>
+                                    <li class="wow fadeIn" data-wow-delay="0.8s"><a href="/goverment-solutions"><i
+                                                class="fa-solid fa-angles-right"></i>  GOVERNMENT
+                                            SOLUTIONS</a>
+                                    </li>
+                                    <li class="wow fadeIn" data-wow-delay="0.2s"><a href="/about"><i
+                                                class="fa-solid fa-angles-right pe-2"></i>ABOUT US</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li class="wow fadeIn" data-wow-delay="0.6s"><a href="/contactus"><i
+                                                class="fa-solid fa-angles-right pe-2"></i>CONTACT
+                                            US</a></li>
+                                    <li class="wow fadeIn" data-wow-delay="0.3s"><a href="/client"><i
+                                                class="fa-solid fa-angles-right pe-2"></i>CLIENT</a>
+                                    </li>
+                                    <li class="wow fadeIn" data-wow-delay="0.4s"><a href="/referfriend"><i
+                                                class="fa-solid fa-angles-right pe-2"></i>REFER
+                                            A FRIEND</a>
+                                    </li>
+                                    <li class="wow fadeIn" data-wow-delay="0.7s"><a href="/benifits"><i
+                                                class="fa-solid fa-angles-right pe-2"></i>BENEFITS</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="footer-widget-heading mb-3 d-flex justify-content-lg-start justify-content-around align-items-center align-items-lg-center wow fadeIn"
+                            data-wow-delay="0.1s">
+                            <div>Contact Info</div>
+                        </div>
+                        <div class="footer-text py-2 d-flex justify-content-start align-items-start wow fadeIn"
+                            data-wow-delay="0.2s">
+                            <i class="fa-solid fa-phone pe-2"></i>
+                            <div>(786) 715-6132</div>
+                        </div>
+
+                        <div class="footer-text py-2 d-flex justify-content-start align-items-start wow fadeIn"
+                            data-wow-delay="0.3s">
+                            <i class="fa-solid fa-envelope pe-2"></i>
+                            <div><a href="mailto: valery@vpstaffingagency.com">valery@vpstaffingagency.com</a>
+                            </div>
+                        </div>
+
+                        <div class="footer-text py-2 d-flex justify-content-start align-items-start wow fadeIn"
+                            data-wow-delay="0.4s">
+                            <i class="fa-solid fa-location-dot pe-2"></i>
+                            <div>
+                                #1218 1919 Taylor Street STE F Houston, TX 77007.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="footer-cta pt-3">
+                </div>
+
+                <div class="copyright-text py-3 text-center">
+                    <p>Copyright © 2022 VP Staffing. All Rights Reserved.<a href="#"></a></p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Wow JS -->
+<script src="./js/wow.min.js"></script>
+<script>
+    const message = `<%= message %>`
+    if (message.length) {
+        setTimeout(() => {
+            var alertNode = document.querySelector('#alert')
+            alertNode.remove()
+        }, 5000);
+    }
+</script>
+
+<script>
+    const messages = `<%= messages %>`
+    if (messages.length) {
+        setTimeout(() => {
+            var alertNode = document.querySelector('#alert')
+            alertNode.remove()
+        }, 5000);
+    }
+</script>
+
+<script>
+    new WOW().init();
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+
+<!-- Script CSS -->
+<script src="./js/app.js"></script>
+
+
+
+
+</html>

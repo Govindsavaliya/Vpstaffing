@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--fav-icon--------->
+    <link rel="shortcut icon" href="images/stethoscope.png">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+
+    <meta property="og:title" content="VP Staffing : The Concierge Agency" />
+    <meta property="og:image"content="https://www.vpstaffingagency.com/images/images/ogimage.png" />
+    <meta property="og:url" content="https://www.vpstaffingagency.com/" />
+    <meta property="og:title" content="VP Staffing : The Concierge Agency">
+    <meta property="og:site_name" content="vpstaffingagency" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>VP Staffing : The Concierge Agency</title>
+    <!-- font  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="./css/animate.css" />
+
+
+    <!-- Bootstrap Css -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!----------Custom Css--------->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!----------Media Css--------->
+    <link rel="stylesheet" href="./css/media.css">
+
+    <style>
+        #alert {
+            z-index: 1;
+            position: fixed;
+            top: 149px;
+            right: 5px;
+            /* width: 100%; */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <%if(message.length) { %>
+        <div class="alert alert-success dfix" id="alert">
+            <%=message%>
+        </div>
+        <%}%>
+
+            <%if(messages.length) { %>
+                <div class="alert alert-danger dfix" id="alert">
+                    <%=messages%>
+                </div>
+                <%}%>
+
+                    <!----------------------------------------------------------- Header Section ---------------------------------------------------------->
+                    <header>
+                        <div class="bgHeader header"></div>
+                        <div class="container">
+                            <div class="row mainusMrg">
+                                <div
+                                    class="col-lg-6 d-flex justify-content-center justify-content-lg-start align-items-start py-3">
+                                    <div
+                                        class="contact-info mailText d-flex flex-wrap justify-content-center align-items-center">
+                                        <a href="tel:(786) 715-6132" class="px-1 whiteSpace wow fadeInDown"><i
+                                                class="fa-solid fa-phone text-black pe-2"></i>(786) 715-6132</a>
+                                        <div class="mx-2 wow fadeInDown">|</div>
+                                        <a href="mailto: valery@vpstaffingagency.com" target="_blank"
+                                            class="px-1 whiteSpace wow fadeInDown"><i
+                                                class="fa-solid fa-envelope pe-2"></i>
+                                            valery@vpstaffingagency.com</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div
+                                        class="d-none d-lg-flex justify-content-lg-end align-items-center text-white py-3 px-0">
+                                        <div class="">
+                                            <a href="https://www.facebook.com/profile.php?id=100087023400204"
+                                                class="facebook px-2 rounded-circle wow fadeInDown"
+                                                data-wow-delay="0.1s"><img src="./images/facebook.png" alt="Facebook"
+                                                    class="img-fluid" draggable="false"></a>
+                                            <a href="https://www.instagram.com/invites/contact/?i=vrrzjc15mt6g&utm_content=pe8ugr4"
+                                                class="instagram px-2 rounded-circle wow fadeInDown"
+                                                data-wow-delay="0.2s"><img src="./images/instagram.png" alt="Instagram"
+                                                    class="img-fluid" draggable="false"></a>
+                                            <a href="https://www.linkedin.com/company/vp-staffing-agency/"
+                                                class="linkedin px-2 rounded-circle wow fadeInDown"
+                                                data-wow-delay="0.6s"><img src="./images/linkedin.png" alt="Linkedin"
+                                                    class="img-fluid" draggable="false"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row px-4 m-0">
+                                    <div class="d-flex  justify-content-between align-items-center mainNav header px-4">
+
+                                        <a href="/" class="wow fadeIn" data-wow-delay="0.1s">
+                                            <img src="images/Final_Logo.png" alt="Logo" class="img-fluid HeaderLogo "
+                                                draggable="false">
+                                        </a>
+
+                                        <nav class="navbar ms-lg-auto p-0 ">
+                                            <ul class="d-flex m-0 navbar-list">
+                                                <div class="close-navbar-btn">
+                                                    <i class="fa-solid fa-xmark close-outline"></i>
+                                                </div>
+
+
+                                                <li class="me-xl-3 me-md-2 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.2s">
+                                                    <a class="navbar-link active navItem" href="/">HOME</a>
+                                                </li>
+                                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.3s">
+                                                    <a class="navbar-link navItem" href="/applynow">APPLY NOW</a>
+                                                </li>
+                                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.5s">
+                                                    <a class="navbar-link navItem"
+                                                        href="/goverment-solutions">Government
+                                                        Solutions</a>
+                                                </li>
+                                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.4s">
+                                                    <a class="navbar-link navItem" href="/about">ABOUT US</a>
+                                                </li>
+                                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.6s">
+                                                    <a class="navbar-link navItem" href="/contactus">CONTACT US</a>
+                                                </li>
+                                                <li class="mx-xl-3 mx-md-2 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.7s">
+                                                    <a class="navbar-link navItem" href="/client">CLIENT</a>
+                                                </li>
+                                                <li class="ms-xl-3 ms-md-2 mt-0 mt-md-1 menuitem MainNavPad wow fadeIn"
+                                                    data-wow-delay="0.8zs">
+                                                    <a class="navbar-link navItem d-none d-lg-block"
+                                                        href="#">RESOURCES</a>
+                                                    <ul class="PetaMenu text-center poREl">
+                                                        <li><a href="/referfriend">REFER A FRIEND</a></li>
+                                                        <li><a href="/benifits">BENEFITS</a></li>
+                                                    </ul>
+                                                </li>
+
+                                            </ul>
+                                        </nav>
+                                        <div class="mobile-navbar-btn_one">
+                                            <i name="menu-outline" class="fa-solid fa-bars"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </header>
+
+                    <!------------------------------------------------------------- Main Banner Section ------------------------------------------------------------->
+                    <section>
+                        <div class="mainBannerImg">
+                            <div class="container">
+                                <div
+                                    class="row d-flex justify-content-lg-end align-items-end justify-content-md-center">
+
+                                    <div class="col-xl-5 col-lg-7 col-lg-5 col-md-8 wow fadeInRight"
+                                        data-wow-delay="0.5s">
+                                        <div class="parent">
+                                            <div class="twins">
+                                                <div class="text">
+                                                    <div>JOB OPPORTUNITIES</div>
+                                                </div>
+                                                <hr class="m-0">
+                                                <div class="text1">
+                                                    <div>Nursing, Allied Health, Locum Tenens</div>
+                                                </div>
+                                                <form action="#" class="d-flex flex-column">
+                                                    <select class="search-box" required>
+                                                        <option value="" disabled selected class="PetaTitle">Select Your
+                                                            Title</option>
+                                                        <option value="2">Allied Professional</option>
+                                                        <option value="3">Non-Clinical</option>
+                                                        <option value="4">MA</option>
+                                                        <option value="5">Social Worker</option>
+                                                        <option value="6">THERAPIST</option>
+                                                        <option value="7">LPN</option>
+                                                        <option value="8">TECH</option>
+                                                        <option value="9">CNA</option>
+                                                        <option value="10">NP</option>
+                                                        <option value="11">PA</option>
+                                                        <option value="12">PCA</option>
+                                                        <option value="13">PCT</option>
+                                                        <option value="13">RN</option>
+                                                    </select>
+
+                                                    <select class="search-box" required>
+                                                        <option value="" disabled selected class="PetaTitle">Select Your
+                                                            Specialty</option>
+                                                        <option value="1">ANESTHESIA TECH</option>
+                                                        <option value="2">CASE MANAGEMENT</option>
+                                                        <option value="3">CATH LAB</option>
+                                                        <option value="1">CLINIC</option>
+                                                        <option value="2">CNA</option>
+                                                        <option value="3">Corrections</option>
+                                                        <option value="1">DIALYSIS TECH</option>
+                                                        <option value="2">EDUCATOR</option>
+                                                        <option value="3">EKG Tech</option>
+                                                        <option value="1">Emergency Room</option>
+                                                        <option value="2"> ENDOSCOPY</option>
+                                                        <option value="3">Endoscopy Tech</option>
+                                                        <option value="1">EP Lab Tech</option>
+                                                        <option value="2">ER Tech</option>
+                                                        <option value="3">ER-CNA</option>
+
+                                                        <option value="1">ER-PCA</option>
+                                                        <option value="2">HEMO-DIALYSIS</option>
+                                                        <option value="3">Home Health</option>
+
+                                                        <option value="1">Home Health - Visiting</option>
+                                                        <option value="2">ICU</option>
+                                                        <option value="3">Labor & Delivery</option>
+                                                        <option value="1">Long Term Care-CNA</option>
+                                                        <option value="2">LPN</option>
+                                                        <option value="3">LPN-Hospital</option>
+                                                        <option value="1">LTC</option>
+                                                        <option value="2">LTC - Supervisor</option>
+                                                        <option value="3">LTC-LPN</option>
+                                                        <option value="1">Management</option>
+                                                        <option value="2">Medical Surgical</option>
+                                                        <option value="3">Oncology</option>
+                                                        <option value="1">Motherbaby</option>
+                                                        <option value="2">New Grad-CNA</option>
+                                                        <option value="3">New Grad-LPN</option>
+
+
+                                                        <option value="2">NICU (Neonatal ICU)</option>
+                                                        <option value="3">NP</option>
+                                                        <option value="1">OB Tech</option>
+                                                        <option value="2">Operating Room</option>
+                                                        <option value="3">OR Tech</option>
+                                                        <option value="1">PA</option>
+                                                        <option value="2">PACU</option>
+                                                        <option value="3">PCA</option>
+                                                        <option value="1">PCT</option>
+                                                        <option value="2">PCT-EKG</option>
+                                                        <option value="3">PEDIATRICS</option>
+                                                        <option value="1">PEDIATRICS - HOMECARE</option>
+                                                        <option value="2">Private Duty-LPN</option>
+                                                        <option value="3">Psych-CNA</option>
+
+                                                        <option value="2">Psychiatry</option>
+                                                        <option value="3">Radiology</option>
+                                                        <option value="1">Radiology Tech</option>
+                                                        <option value="2">RN - New Grad</option>
+                                                        <option value="3">School</option>
+                                                        <option value="1">Sitter</option>
+                                                        <option value="2">Sterile Processing Tech</option>
+                                                        <option value="3">Telemetry/PCU</option>
+                                                        <option value="1">NICU</option>
+                                                        <option value="2">Clerk - Billing Representative</option>
+                                                        <option value="3">Certified Medical Coders</option>
+                                                        <option value="1">Clerk</option>
+                                                        <option value="2">Dental Assistant</option>
+                                                        <option value="3">Pharmacist</option>
+
+                                                        <option value="3">Pharmacy Technician</option>
+                                                        <option value="3">Phlebotomist</option>
+                                                        <option value="3">Recreation Aide</option>
+                                                        <option value="3">Security Guard</option>
+                                                        <option value="3">Home Health - Oasis</option>
+                                                        <option value="3">Home Health - UAS Assessments</option>
+                                                        <option value="3">Audits - Infection Control</option>
+                                                        <option value="3">Clinic - Amb Care</option>
+                                                        <option value="3">Clinic - Amb Surg</option>
+                                                        <option value="3">Clinic - Covid Testing</option>
+                                                        <option value="3">Clinic - Flu/Covid Vaccine</option>
+                                                        <option value="3">Detox</option>
+                                                        <option value="3">GROUP HOME</option>
+                                                        <option value="3">Home Health - Hospice</option>
+                                                        <option value="3">IV TEAM</option>
+                                                        <option value="3">Medical Surgical - Hospice</option>
+                                                        <option value="3">Monitor Tech</option>
+
+                                                        <option value="3">Management - Director of Nursing</option>
+                                                        <option value="3">Beautician</option>
+
+                                                        <option value="3">Cath Lab Tech</option>
+                                                        <option value="3">Central Supply Assistant</option>
+                                                        <option value="3">Certified Trauma Registrar</option>
+
+                                                        <option value="3">Certified Tumor Registrar</option>
+                                                        <option value="3">Clerk - Credentialing Coordinator</option>
+
+                                                        <option value="3">Clerk - Data Entry Specialist</option>
+                                                        <option value="3">Clerk - Graphics Designer</option>
+                                                        <option value="3">Clerk - IT</option>
+                                                        <option value="3">Clerk - Navigation Associate</option>
+                                                        <option value="3">Clerk - Recruiter</option>
+                                                        <option value="3">Clerk - Staff Accountant</option>
+                                                        <option value="3">Clinical Lab Scientist/Technician</option>
+                                                        <option value="3">CLT - Blood Bank</option>
+                                                        <option value="3">CLT - Chemistry</option>
+                                                        <option value="3">CLT - Supervisor</option>
+                                                        <option value="3">Cook</option>
+                                                        <option value="3">CT Tech (Bluesky)</option>
+                                                        <option value="3">CV OR Tech</option>
+
+                                                        <option value="3">Dental Hygienist</option>
+                                                        <option value="3">Dietary Aid</option>
+                                                        <option value="3">Echo Tech</option>
+                                                        <option value="3">Emergency Room - Pediatrics</option>
+                                                        <option value="3">Patient Escort</option>
+                                                        <option value="3">Histology Tech</option>
+                                                        <option value="3">Housekeeper</option>
+                                                        <option value="3">Infection Preventionist</option>
+                                                        <option value="3">IV Team - Anesthesia</option>
+                                                        <option value="3">Laboratory Assistant</option>
+                                                        <option value="3">Mammography Tech</option>
+                                                        <option value="3">Manager</option>
+                                                        <option value="3">Neurodiagnostic Technician/EEG</option>
+                                                        <option value="3">Non Clinical Manager</option>
+                                                        <option value="3">Nuclear Medicine Technologist (Bluesky)
+                                                        </option>
+                                                        <option value="3">Ophthalmology Tech</option>
+                                                        <option value="3">Registered Dietician</option>
+                                                        <option value="3">Respiratory Therapist</option>
+                                                        <option value="3">Sleep Technologist</option>
+                                                        <option value="3">Stock Person</option>
+                                                        <option value="3">Telemetry Tech</option>
+                                                        <option value="3">Ultrasound Tech/Sonographer</option>
+                                                        <option value="3"> Warehouse Manager</option>
+                                                        <option value="3">X-ray Tech</option>
+                                                        <option value="3">Activity Therapist</option>
+                                                        <option value="3"> Case Management (BA)</option>
+                                                        <option value="3">Case Management (MA)</option>
+                                                        <option value="3">Clerk - Language Coordinator</option>
+                                                        <option value="3">Creative Art Therapist</option>
+                                                        <option value="3">EMT - Paramedic</option>
+                                                        <option value="3">Mortuary Technician</option>
+                                                        <option value="3">MRI Tech</option>
+                                                        <option value="3">Radiation Therapist</option>
+                                                        <option value="3">Rehab Aide</option>
+                                                        <option value="3">Speech Pathologist (Speech Therapist
+                                                            Hospitals)</option>
+                                                        <option value="3">MRDD</option>
+                                                        <option value="3">MSC</option>
+                                                        <option value="3">Occupational Therapist</option>
+                                                        <option value="3">OPWDD</option>
+                                                        <option value="3">ORT- New Grad</option>
+                                                        <option value="3">PHD</option>
+                                                        <option value="3">Physical Therapist</option>
+                                                        <option value="3">Psych</option>
+                                                        <option value="3">Psychiatric Tech</option>
+                                                        <option value="3">Rehab</option>
+                                                        <option value="3">SOCIAL WORKER</option>
+                                                        <option value="3">Supply Data Analyst</option>
+                                                        <option value="3">THERAPIST</option>
+                                                        <option value="3">Wound Care</option>
+                                                        <option value="3">DRIVER</option>
+                                                        <option value="3">Speech Therapist</option>
+                                                        <option value="3">LCSW</option>
+                                                        <option value="3">LMSW</option>
+                                                        <option value="3">Oncology – Chemo Infusion</option>
+                                                        <option value="3">Food Services</option>
+
+
+                                                    </select>
+
+                                                    <select class="search-box" required>
+                                                        <option value="" disabled selected class="PetaTitle">Select Your
+                                                            State</option>
+                                                        <option value="1">Alabama</option>
+                                                        <option value="2">Pennsylvania</option>
+                                                        <option value="3">South Carolina</option>
+                                                        <option value="4">North Carolina</option>
+                                                        <option value="5">Florida</option>
+                                                        <option value="6">New York</option>
+                                                        <option value="7">Louisiana</option>
+                                                        <option value="8">Arizona</option>
+                                                        <option value="9">Illinois</option>
+                                                        <option value="10">Michigan</option>
+                                                        <option value="11">Connecticut</option>
+                                                        <option value="12">Virginia</option>
+                                                        <option value="13">Nevada</option>
+                                                        <option value="47">Texas</option>
+                                                        <option value="14">Colorado</option>
+                                                        <option value="15">New Hampshire</option>
+                                                        <option value="16">California</option>
+                                                        <option value="17">Massachusetts</option>
+                                                        <option value="18">Idaho</option>
+                                                        <option value="19">Iowa</option>
+                                                        <option value="20">New Jersey</option>
+                                                        <option value="21">Missouri</option>
+                                                        <option value="22">District of Columbia</option>
+                                                        <option value="23">Kansas</option>
+                                                        <option value="24">Ohio</option>
+                                                        <option value="25">Kentucky</option>
+                                                        <option value="26">Oregon</option>
+                                                        <option value="27">Wisconsin</option>
+                                                        <option value="28">Maryland</option>
+                                                        <option value="29">Minnesota</option>
+                                                        <option value="30">Georgia</option>
+                                                        <option value="31">Indiana</option>
+                                                        <option value="32">Nebraska</option>
+                                                        <option value="33">Washington</option>
+                                                        <option value="34">Tennessee</option>
+                                                        <option value="35">Utah</option>
+                                                        <option value="36">New Mexico</option>
+                                                        <option value="37">Oklahoma</option>
+                                                        <option value="38">West Virginia</option>
+                                                        <option value="39">Rhode Island</option>
+                                                        <option value="40">Wyoming</option>
+                                                        <option value="41">South Dakota</option>
+                                                        <option value="42">North Dakota</option>
+                                                        <option value="43"> Maine</option>
+                                                        <option value="44">Arkansas</option>
+                                                        <option value="45">Vermont</option>
+                                                        <option value="46">Montana</option>
+
+
+                                                    </select>
+
+                                                    <a href="./applynow">
+                                                        <div class="d-flex flex-column fw-bold">
+                                                            <input type="button" value="Search "
+                                                                class="vafSubmit button-3">
+                                                        </div>
+                                                    </a>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!------------------------------------------------------------- All Should Section ----------------------------------------------------------------->
+                    <section class="marginBottom">
+                        <div class="container">
+                            <div class="text-center stackfont wow flash" data-wow-delay="1s">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="./images/lifeline.png" alt="lifelineImg"
+                                        draggable="false">
+                                    HERE’S WHY YOU SHOULD BECOME A VP
+                                    <img class="img-fluid" src="./images/lifeline.png" alt="lifelineImg"
+                                        draggable="false">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mb-5 marginBottom wow flash" data-wow-delay="1s">
+                                <img src="images/Uderline.png" alt="Uderline" class="img-fluid UderlineImg"
+                                    draggable="false">
+                            </div>
+
+                            <div class="row justify-content-evenly m-0">
+
+                                <div class="col-lg-6 py-4 px-0 d-flex justify-content-start align-items-center">
+                                    <div class="iconImg d-flex justify-content-center align-items-center wow bounceIn">
+                                        <img src="images/icon/competitive-earning.png" alt="Competitive Earning"
+                                            draggable="false" class="img-fluid">
+                                    </div>
+                                    <div class="px-3">
+                                        <div class="text2 wow fadeInDown" data-wow-delay="0.1s">Competitive earnings
+                                        </div>
+                                        <div class="text3 wow fadeInDown" data-wow-delay="0.4s">Earn the generous hourly
+                                            rate you
+                                            deserve</div>
+                                        <div class="text4 wow fadeInDown" data-wow-delay="1s">
+                                            <a href="/about" class="">Read More..
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-4 px-0 d-flex justify-content-start align-items-center">
+                                    <div class="iconImg d-flex justify-content-center align-items-center wow bounceIn">
+                                        <img src="images/icon/concierge-service.png" alt="Concierge Service"
+                                            draggable="false" class="img-fluid">
+                                    </div>
+                                    <div class="px-3">
+                                        <div class="text2 wow fadeInDown" data-wow-delay="0.2s">Competitive service
+                                        </div>
+                                        <div class="text3 wow fadeInDown" data-wow-delay="0.5s">Get personalized care
+                                            with access and
+                                            privileges through our partnerships</div>
+                                        <div class="text4 wow fadeInDown" data-wow-delay="1s">
+                                            <a href="/about" class="">Read More..
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-4 px-0 d-flex justify-content-start align-items-center">
+                                    <div class="iconImg d-flex justify-content-center align-items-center wow bounceIn">
+                                        <img src="images/icon/freedom-flexibility.png" alt="Freedom Flexibility"
+                                            draggable="false" class="img-fluid">
+                                    </div>
+                                    <div class="px-3">
+                                        <div class="text2 wow fadeInDown" data-wow-delay="0.3s">Freedom and flexibility
+                                        </div>
+                                        <div class="text3 wow fadeInDown" data-wow-delay="0.6s">Spend more time living
+                                            and enjoying
+                                            family and friends during time off</div>
+                                        <div class="text4 wow fadeInDown" data-wow-delay="1s">
+                                            <a href="/about" class="">Read More..
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-4 px-0 d-flex justify-content-start align-items-center">
+                                    <div class="iconImg d-flex justify-content-center align-items-center wow bounceIn">
+                                        <img src="images/icon/avoid-burnout.png" alt="Avoid Burnout" draggable="false"
+                                            class="img-fluid iconImg">
+                                    </div>
+                                    <div class="px-3">
+                                        <div class="text2 wow fadeInDown" data-wow-delay="0.4s">Avoid burnout</div>
+                                        <div class="text3 wow fadeInDown" data-wow-delay="0.7s">Avoid work place
+                                            politics and career
+                                            stand
+                                            still, while doing what you love most</div>
+                                        <div class="text4 wow fadeInDown" data-wow-delay="1s">
+                                            <a href="/about" class="">Read More..
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-4 px-0 d-flex justify-content-start align-items-center">
+                                    <div class="iconImg d-flex justify-content-center align-items-center wow bounceIn">
+                                        <img src="images/icon/discover-new-places.png" alt="Discover Placces"
+                                            draggable="false" class="img-fluid">
+                                    </div>
+                                    <div class="px-3">
+                                        <div class="text2 wow fadeInDown" data-wow-delay="0.5s">Discover new places
+                                        </div>
+                                        <div class="text3 wow fadeInDown" data-wow-delay="0.8s">Explore new hobbies and
+                                            pursue new
+                                            interests in your new environment</div>
+                                        <div class="text4 wow fadeInDown" data-wow-delay="1s">
+                                            <a href="/about" class="">Read More..
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-4 px-0 d-flex justify-content-start align-items-center">
+                                    <div class="iconImg d-flex justify-content-center align-items-center wow bounceIn">
+                                        <img src="images/icon/Meet-People-Around-The-Country.png"
+                                            alt="Meet People Country" draggable="false" class="img-fluid">
+                                    </div>
+                                    <div class="px-3">
+                                        <div class="text2 wow fadeInDown" data-wow-delay="0.6s">Get connected</div>
+                                        <div class="text3 wow fadeInDown" data-wow-delay="0.9s">Meet people around the
+                                            country and
+                                            network
+                                            with other professionals just like you</div>
+                                        <div class="text4 wow fadeInDown" data-wow-delay="1s">
+                                            <a href="/about" class="">Read More..
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!----------------------------------------------------------------------------- Location Section ------------------------------------------------->
+                    <section class="location VectorSmartObjectImg">
+                        <div class="container">
+                            <div class="text-center locationfont paddingTop wow flash" data-wow-delay="1s">
+                                <img class="img-fluid" src="./images/lifeline1.png" alt="lifelineImg" draggable="false">
+                                FEATURED LOCATION
+                                <img class="img-fluid" src="./images/lifeline1.png" alt="lifelineImg" draggable="false">
+                            </div>
+                            <div class="d-flex justify-content-center paddingBottom wow flash" data-wow-delay="1s">
+                                <img src="images/Uderline1.png" alt="Uderline" class="img-fluid UderlineImg"
+                                    draggable="false">
+                            </div>
+
+                            <div class="row align-items-center justify-content-center m-0 paddingBottom">
+
+                                <div class="col-lg-3 col-md-6 col-sm-8 m-0 py-4 wow fadeInDown" data-wow-delay="0.1s">
+                                    <div class="parentBox BoxImg">
+                                        <a href="">
+                                            <!-- <img src="images/Miami_FL.png" href="" alt="Miami-FL"
+                                                class="img-fluid BoxImg w-100 secondBox" draggable="false"> -->
+                                            <img src="images/Miami_FL.png" href="" alt="Miami-FL"
+                                                class="img-fluid BoxImg w-100 secondBox" draggable="false">
+                                        </a>
+                                        <div class="middle">
+                                            <a href="/applynow">
+                                                <div class="ApplyBtn">Apply Now</div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="Boxtext py-2">
+                                        <a href="#">
+                                            Miami FL
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-8 m-0 py-4 wow fadeInDown" data-wow-delay="0.2s">
+                                    <div class="parentBox BoxImg">
+                                        <a href="">
+                                            <img src="images/Atlanta_GA.png" alt="Atlanta-GA"
+                                                class="img-fluid BoxImg w-100 secondBox" draggable="false">
+                                        </a>
+                                        <div class="middle">
+                                            <a href="/applynow">
+                                                <div class="ApplyBtn">Apply Now</div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="Boxtext py-2">
+                                        <a href="#">
+                                            Atlanta-GA
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-8 m-0 py-4 wow fadeInDown" data-wow-delay="0.3s">
+                                    <div class="parentBox BoxImg">
+                                        <a href="">
+                                            <img src="images/Houston_TX.png" alt="Houston-TX"
+                                                class="img-fluid BoxImg w-100 secondBox" draggable="false">
+                                        </a>
+                                        <div class="middle">
+                                            <a href="/applynow">
+                                                <div class="ApplyBtn">Apply Now</div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="Boxtext py-2">
+                                        <a href="#">
+                                            Houston TX
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-8 m-0 py-4 wow fadeInDown" data-wow-delay="0.4s">
+                                    <div class="parentBox BoxImg">
+                                        <a href="">
+                                            <img src="images/Los_Angeles_CA.png" alt="los-Angeles-CA"
+                                                class="img-fluid BoxImg w-100 secondBox" draggable="false">
+                                        </a>
+                                        <div class="middle">
+                                            <a href="/applynow">
+                                                <div class="ApplyBtn">Apply Now</div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="Boxtext py-2">
+                                        <a href="#">
+                                            Los Angeles CA
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="row d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center pt-3 pb-5">
+                    <a href="#" class="BtnBox my-3">Many More Options</a>
+                </div>
+            </div> -->
+
+                        </div>
+
+
+                    </section>
+
+                    <!------------------------------------------------------------------------- Rafrance Section ----------------------------------------------------->
+                    <section class="overflow-hidden VectorSmartObjectBGImg">
+                        <div class="container ">
+
+                            <div class="row align-items-center marginTop marginBottom">
+                                <div
+                                    class="col-lg-6 d-flex justify-content-center align-items-center p-3 img-responsive wow flipInX">
+                                    <img src="images/Refer-friend-amico.png" alt="Refer Friend"
+                                        class="img-fluid ReferFriend animate__bounceOut" draggable="true">
+                                </div>
+                                <div
+                                    class="col-lg-6 d-flex flex-column justify-content-center align-items-center align-items-lg-start ">
+                                    <div class="rafranceText py-1 wow fadeInRight" data-wow-delay="0.2s">REFER A FRIEND!
+                                    </div>
+                                    <div class="text3 py-1 text-center text-lg-start wow fadeInRight"
+                                        data-wow-delay="0.4s">Earn money
+                                        for every nurse or allied professional
+                                        who
+                                        successfully joins the VP team</div>
+                                    <a href="/referfriend">
+                                        <div class="Btnrafrance my-3 wow fadeInRight" data-wow-delay="0.6s">
+                                            Refer A Friend
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center marginTop marginBottom">
+                                <div
+                                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+                                    <div class="rafranceText py-1 text-center wow fadeInLeft" data-wow-delay="0.2s">JOB
+                                        NOTIFICATIONS
+                                    </div>
+                                    <div class="text3 py-1 text-center text-lg-start wow fadeInLeft"
+                                        data-wow-delay="0.4s">Stay up to
+                                        date on the newest nursing job
+                                        opportunities. </div>
+
+                                    <a href="#openSignUp-Now">
+                                        <div class="Btnrafrance my-3 wow fadeInLeft" data-wow-delay="0.6s">Sign Up Now
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div
+                                    class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center align-items-center p-3 wow flipInX">
+                                    <img src="images/Pleasant-surprise-amico.png" alt="Pleasant Surprise"
+                                        class="img-fluid" draggable="true">
+                                </div>
+                            </div>
+
+                            <div class="row paddingBottom paddingTop">
+                                <div
+                                    class="col-lg-6 d-flex justify-content-lg-center align-items-center p-3 wow flipInX">
+                                    <img src="images/Online-Review-rafiki.png" alt="Online Review" class="img-fluid"
+                                        draggable="true">
+                                </div>
+                                <div
+                                    class="col-lg-6 d-flex flex-column justify-content-center align-items-center align-items-lg-center">
+                                    <div
+                                        class="d-flex justify-content-center justify-content-lg-center align-items-center">
+                                        <div class="rateFont m-0 text-center text-lg-center wow fadeInRight"
+                                            data-wow-delay="0.2s">
+                                            4.5
+                                        </div>
+                                        <div class="TextRate px-3 wow fadeInRight" data-wow-delay="0.4s">
+                                            Out Of <br> 5 Stars
+                                        </div>
+                                    </div>
+                                    <div class="py-1 wow fadeInRight" data-wow-delay="0.6s">
+                                        <img src="images/star1.png" alt="Star Img" class="img-fluid " draggable="false">
+                                        <img src="images/star2.png" alt="Star Img" class="img-fluid " draggable="false">
+                                        <img src="images/star3.png" alt="Star Img" class="img-fluid " draggable="false">
+                                        <img src="images/star4.png" alt="Star Img" class="img-fluid " draggable="false">
+                                        <img src="images/star5.png" alt="Star Img" class="img-fluid " draggable="false">
+                                    </div>
+                                    <div class="text3 py-2 text-center text-lg-center wow fadeInRight"
+                                        data-wow-delay="0.8s">
+                                        See what others are saying about VP Staffing
+                                    </div>
+
+                                    <a href="https://goo.gl/maps/7p9sVuCek32TK4u4A" target="_blank">
+                                        <div class="Btnrafrance my-3 wow fadeInRight" data-wow-delay="0.9s">Leave a
+                                            Review</div>
+                                    </a>
+
+
+                                    <!-- <div class="rafranceText">REFER A FRIEND! </div>
+                        <div class="text3">Earn money for every nurse or allied professional who
+                            successfully joins the VP team</div>    
+                        <div class="text-center">
+                            <div class="Btnrafrance">
+                                <a href="#">Reefer a Friends </a>
+                            </div>
+                        </div> -->
+                                </div>
+                            </div>
+
+                            <!------------------------------------------------------------- Home PopUp Section ------------------------------------------------------->
+
+                            <!--modals-->
+                            <div id="openSignUp-Now" class="modalDialog">
+                                <div class="parent-box">
+                                    <div class="text d-flex flex-column">
+                                        <div class="d-flex justify-content-start align-items-center pb-3">GET STARTED
+                                        </div>
+                                        <div class="d-flex justify-content-end align-items-end" style="color: black;">
+                                            <a href="#close" title="Close" class="close"><i
+                                                    class="fa-solid fa-xmark"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <form action="/user/userSignUp" class="d-flex flex-column" method="post">
+
+                                        <div class="d-flex flex-column">
+                                            <input type="text" id="FullName" name="fullName" multiple
+                                                placeholder="Full Name" class="popup-box" required>
+                                        </div>
+
+                                        <div class="d-flex flex-column">
+                                            <input type="tetx" id="Title" name="title" multiple placeholder="Title"
+                                                class="popup-box" required>
+                                        </div>
+
+                                        <div class="d-flex flex-column">
+                                            <input type="number" id="phone" name="phone"
+                                                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone"
+                                                class="applyInput-box popup-box" required>
+                                        </div>
+
+                                        <div class="d-flex flex-column">
+                                            <input type="email" id="Email" name="email" multiple placeholder="Email"
+                                                class="popup-box" required>
+                                        </div>
+
+                                        <div class="d-flex flex-column pt-2">
+                                            <button type="submit" class="vafSubmit button-3">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+
+                    <!--------------------------------------------------------------- Footer Section -------------------------------------------------------------->
+                    <footer class="footer-section">
+                        <div class="container">
+                            <div class="footer-content ">
+                                <div class="row pt-5  wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="col-xl-4 col-lg-4 px-3">
+                                        <div
+                                            class="footer-logo d-flex justify-content-center justify-content-lg-start align-items-center align-items-lg-center">
+                                            <a href="#">
+                                                <img src="images/Final_Logo1.png" class="img-fluid" draggable="false"
+                                                    alt="logo">
+                                            </a>
+                                        </div>
+
+                                        <div
+                                            class="footer-widget-heading mb-3 d-flex justify-content-lg-start justify-content-around align-items-center align-items-lg-center">
+                                            <div>Follow Us On</div>
+                                        </div>
+                                        <div class="row footer-widget">
+                                            <div class="col-6 wow fadeIn" data-wow-delay="0.2s">
+                                                <a href="https://www.facebook.com/profile.php?id=100087023400204"
+                                                    target="_blank"
+                                                    class="footer-text d-flex justify-content-start align-items-center">
+                                                    <i class="fa-brands fa-square-facebook me-2"></i>
+                                                    <div class="">Facebook</div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-6 wow fadeIn" data-wow-delay="0.4s">
+                                                <a href="https://www.instagram.com/invites/contact/?i=vrrzjc15mt6g&utm_content=pe8ugr4"
+                                                    target="_blank"
+                                                    class="footer-text d-flex justify-content-start align-items-center">
+                                                    <i class="fa-brands fa-square-instagram me-2"></i>
+                                                    <div>Instagram</div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                                                <a href="https://www.linkedin.com/company/vp-staffing-agency/"
+                                                    target="_blank"
+                                                    class="footer-text d-flex justify-content-start align-items-center">
+                                                    <i class="fa-brands fa-linkedin me-2"></i>
+                                                    <div>Linkedin</div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4">
+                                        <div class="row py-3 footer-widget">
+                                            <div class="footer-widget-heading mb-3 d-flex justify-content-lg-start justify-content-center align-items-center align-items-lg-center wow fadeIn"
+                                                data-wow-delay="0.1s">
+                                                <div>Services</div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul>
+                                                    <li class="wow fadeIn" data-wow-delay="0.2s"><a href="/"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>HOME</a>
+                                                    </li>
+                                                    <li class="wow fadeIn" data-wow-delay="0.5s"><a href="/applynow"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>APPLY
+                                                            NOW</a></li>
+                                                    <li class="wow fadeIn" data-wow-delay="0.8s"><a
+                                                            href="/goverment-solutions"><i
+                                                                class="fa-solid fa-angles-right"></i> GOVERNMENT
+                                                            SOLUTIONS</a>
+                                                    </li>
+                                                    <li class="wow fadeIn" data-wow-delay="0.2s"><a href="/about"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>ABOUT US</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <ul>
+                                                    <li class="wow fadeIn" data-wow-delay="0.6s"><a href="/contactus"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>CONTACT
+                                                            US</a></li>
+                                                    <li class="wow fadeIn" data-wow-delay="0.3s"><a href="/client"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>CLIENT</a>
+                                                    </li>
+                                                    <li class="wow fadeIn" data-wow-delay="0.4s"><a
+                                                            href="/referfriend"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>REFER
+                                                            A FRIEND</a>
+                                                    </li>
+                                                    <li class="wow fadeIn" data-wow-delay="0.7s"><a href="/benifits"><i
+                                                                class="fa-solid fa-angles-right pe-2"></i>BENEFITS</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-4">
+                                        <div class="footer-widget-heading mb-3 d-flex justify-content-lg-start justify-content-around align-items-center align-items-lg-center wow fadeIn"
+                                            data-wow-delay="0.1s">
+                                            <div>Contact Info</div>
+                                        </div>
+                                        <div class="footer-text py-2 d-flex justify-content-start align-items-start wow fadeIn"
+                                            data-wow-delay="0.2s">
+                                            <i class="fa-solid fa-phone pe-2"></i>
+                                            <div>(786) 715-6132</div>
+                                        </div>
+
+                                        <div class="footer-text py-2 d-flex justify-content-start align-items-start wow fadeIn"
+                                            data-wow-delay="0.3s">
+                                            <i class="fa-solid fa-envelope pe-2"></i>
+                                            <div><a
+                                                    href="mailto: valery@vpstaffingagency.com">valery@vpstaffingagency.com</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="footer-text py-2 d-flex justify-content-start align-items-start wow fadeIn"
+                                            data-wow-delay="0.4s">
+                                            <i class="fa-solid fa-location-dot pe-2"></i>
+                                            <div>
+                                                #1218 1919 Taylor Street STE F Houston, TX 77007.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright-area">
+                            <div class="container">
+                                <div class="footer-cta pt-3">
+                                </div>
+
+                                <div class="copyright-text py-3 text-center">
+                                    <p>Copyright © 2022 VP Staffing. All Rights Reserved.<a href="#"></a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </footer>
+
+
+
+
+</body>
+
+<script>
+    const message = `<%= message %>`
+    if (message.length) {
+        setTimeout(() => {
+            var alertNode = document.querySelector('#alert')
+            alertNode.remove()
+        }, 5000);
+    }
+</script>
+
+<script>
+    const messages = `<%= messages %>`
+    if (messages.length) {
+        setTimeout(() => {
+            var alertNode = document.querySelector('#alert')
+            alertNode.remove()
+        }, 5000);
+    }
+</script>
+
+<!-- Wow JS -->
+<script src="./js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+<!-- Script CSS -->
+<script src="./js/app.js"></script>
+
+
+
+</html>

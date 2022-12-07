@@ -1,0 +1,1427 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --body-color: #ffffff;
+  --theme-color: linear-gradient(0deg, rgb(0, 220, 214) 0%, rgb(10, 186, 181) 100%);
+  --btn-color: #09bdb7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+
+#alert{
+  z-index: 99999;
+  position: fixed;
+  top: 75px;
+  right: 10px;
+  /* width: 100%; */
+  display: block; 
+}
+.alert-success {
+  padding: 15px 25px;
+  color: #fff;
+  border-color: #41a511;
+  /* background: linear-gradient(0deg, rgb(10, 186, 181) 100%, rgb(0, 220, 214) 0%); */
+  background-color: #4CBB17;
+  border-radius: 20px;
+}
+
+.overflowset {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+  color: var(--text-white) !important;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+}
+
+.marginTop {
+  margin-top: 80px;
+}
+
+.marginBottom {
+  margin-bottom: 80px;
+}
+
+.paddingTop {
+  padding-top: 80px!important;
+}
+
+.paddingBottom {
+  padding-bottom: 80px!important;
+}
+
+/* =================================== ScrollBar ========================================= */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(51, 51, 51, 1);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #37d2cc;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(0deg, rgb(10, 186, 181) 100%, rgb(0, 220, 214) 0%);
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Side Nav CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.navbar-list {
+  display: block;
+  list-style: none;
+}
+
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  font-weight: 100px;
+  color: #000;
+  transition: all 0.3s;
+  padding: 0;
+}
+.mobile-navbar-btn_one{
+  line-height: 0px;
+}
+.mobile-navbar-btn_one,
+.closeIcon {
+  font-size: 25px;
+  color: #000;
+  display: none;
+}
+
+.mobile-nav-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #000;
+}
+
+.close-navbar-btn {
+  display: none;
+  font-size: 25px;
+  color: #000;
+}
+
+.mobile-nav-icon {
+  display: block;
+}
+
+.active {
+  left: 0px !important;
+  color: #09bdb7;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Top Bar CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.topBar {
+  font-size: 14px;
+  background: var(--theme-color);
+}
+
+.topHeader li a {
+  color: var(--white-color);
+  padding: 0px 20px 0px 0px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Header Section CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.navItem:hover {
+  background: linear-gradient(0deg, rgb(0, 220, 214) 0%, rgb(10, 186, 181) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navItem:hover:before {
+  opacity: 1;
+  margin-top: -18px;
+}
+
+.navItem {
+  letter-spacing: 0 !important;
+  padding: 0px 10px;
+  white-space: nowrap;
+  position: relative;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+}
+
+.navItem:before {
+  content: '';
+  /* background-image: url("../images/stethoscope.png"); */
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.header {
+  z-index: 99999 !important;
+}
+
+.HeaderLogo {
+  padding-right: 20px;
+}
+
+
+.mailText {
+  color: #fff;
+  font-size: 16px;
+}
+
+.bgHeader {
+  background: var(--theme-color);
+  width: 100%;
+  height: 90px;
+}
+
+.mainusMrg {
+  margin-top: -95px !important;
+}
+
+.mainusMrg::after {
+  margin-top: -95px !important;
+}
+
+.mainNav {
+  background: linear-gradient(180deg, rgba(255, 254, 254, 0.7511379551820728) 95%, rgba(0, 0, 0, 0.7175245098039216) 100%);
+  white-space: nowrap;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.menuitem {
+  font-weight: 500;
+  display: block;
+}
+
+.mainBannerImg {
+  background-image: url("../images/Banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top: -46px;
+  padding: 300px 0px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.mainBannerImg:after {
+  content: '';
+  background-image: url("../images/Shape.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 191px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.MainTxt {
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.PetaTxt {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.headerline {
+  background: var(--theme-color);
+  width: 100%;
+  height: 2px;
+}
+
+.paragraphs {
+  font-style: normal;
+  font-weight: 400;
+  margin: 2px;
+  font-size: 14px;
+}
+
+.btn-circle.btn-sm {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  font-size: 8px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.btn-circle.btn-sm:hover {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  font-size: 8px;
+  color: #0abab5;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Header BoxPage CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.parent {
+  width: 75%;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.twins {
+  padding: 15px;
+  border: 2px solid #0abab5;
+  border-radius: 10px;
+}
+.PetaTitle{
+  color: #aaa!important;
+}
+.petaOption{
+  color: #000!important;
+}
+.search-box {
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* color: #000; */
+  background-color: #f5f5f5;
+  border: 2px solid #0abab5;
+  margin: 10px 0px;
+  padding: 10px;
+  /* width: 100%; */
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.search-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #b7b7b7;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+
+.button-3 {
+  background-color: #0abab5;
+  border: none;
+  color: #fff;
+  margin: 10px 0px;
+  padding: 10px 0px 10px 0px;
+  font-weight: 600;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.button-3:hover {
+  background-color: #28c6c0;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 154, 164, 0.799) 0 0 0 3px;
+  outline: none;
+}
+
+.whiteSpace {
+  white-space: nowrap;
+}
+/* .dblock{
+  display: none!important;
+} */
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Main Banner Section CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.Rectangle {
+  width: 100%;
+  height: 1px;
+  background-color: #555555;
+}
+
+.text {
+  color: #0abab5;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.text1 {
+  color: #555555;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # All Should Section CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.stackfont {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+/* .rectangle{
+    display: flex;
+    width: 95px;
+    height: 1px;
+    background-color: #000000;
+} */
+.text2 {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.text3 {
+  color: #666666;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text4 {
+  color: #e0e0e0;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.iconImg {
+  min-width: 100px;
+  min-height: 100px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # FEATURED LOCATION CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.location {
+  background-color: #09bdb7;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.parentBox {
+  padding: 10px;
+  border: 2px solid #84dedb;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.secondBox {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.Boxtext {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+}
+
+.BtnBox {
+  padding: 10px 15px;
+  border: 2px solid #37d2cc;
+  background-color: #28c6c0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  font-size: 18px;
+  color: #fff!important;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.BtnBox:hover {
+  color: #fff!important;
+  border: 2px solid #28c6c0;
+  background-color: #37d2cc;
+}
+
+.locationfont {
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Rafrance CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.rafranceBG {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+  z-index: -999;
+}
+
+.rafranceText {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.Btnrafrance {
+  padding: 10px 70px;
+  background-color: #09bdb7;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.Btnrafrance:hover {
+  background-color: #37d2cc;
+  color: #fff;
+}
+
+.rateFont {
+  font-size: 100px;
+  justify-content: center;
+}
+
+.TextRate {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+}
+
+.ReferFriend {
+  max-height: 550px;
+  animation: main-img;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.BoxImg {
+  position: relative;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.BoxImg:hover .middle {
+  opacity: 1;
+}
+
+.ApplyBtn {
+  background-color: #09bdb7;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Footer CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.footer-section {
+  background: #09bdb7;
+  position: relative;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #ffffff;
+}
+
+.single-cta i {
+  color: #ffffff;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+
+.footer-logo {
+  padding: 20px 0px;
+}
+
+.footer-text {
+  color: #fff !important;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.footer-widget-heading {
+  color: #fff !important;
+  font-size: 29px;
+  font-weight: 800;
+  position: relative;
+}
+
+.footer-widget-heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 80px;
+  background: #000000;
+}
+
+.footer-widget ul li {
+  /* width: 50%; */
+  font-size: 18px;
+  padding: 10px 0px;
+  /* margin-bottom: 12px; */
+  color: #fff;
+}
+
+.footer-widget ul li:hover {
+  color: #000000f8;
+}
+
+/* .copyright-area{
+  background: #09bdb7;
+  padding: 25px 0;
+} */
+.copyright-text p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.copyright-text p a {
+  color: #ffffff;
+}
+
+.ContactText {
+  color: white;
+  font-size: 18px;
+}
+
+
+.VectorSmartObjectBGImg {
+  background-image: url("../images/Vector-smart-objectBenifits.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+}
+
+.VectorSmartObjectImg{
+  background-image: url("../images/Vector-Smart-Object.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+}
+.marTop{
+  margin-top: -46px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Home PopUp Box Page CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.MainNavPad{
+  position: relative;
+  padding: 30px 5px;
+}
+.PetaMenu{
+  width: 200px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  display: none;
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+}
+.PetaMenu li{
+  padding: 20px 0px;
+  justify-content: center;
+}
+.PetaMenu li:hover{
+  background-color: #a4fffc ;
+}
+.MainNavPad:hover .PetaMenu{
+  display: block;
+}
+
+
+
+
+
+
+/* .dropdown a:hover {
+  background-color: #a4fffc;
+  
+}
+
+.dropbtn {
+  font-size: 15px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  z-index: 1;
+  border-radius: 15px;
+  text-align: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {display: block;} */
+
+
+
+
+
+
+.parent-box {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.popup-box {
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  color: rgb(0, 0, 0);
+  background-color: #f5f5f5;
+  border: 2px solid #0abab5;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.popup-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #b7b7b7;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalDialog>div {
+  max-width: 450px;
+  width: 90%;
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.close {
+  line-height: 25px;
+  position: absolute;
+  text-align: center;
+  top: 25px;
+  width: 34px;
+  height: 34px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* .close:hover {
+  background: #28c6c0;
+} */
+
+
+
+
+/* =========================================  Outhor ================================================== */
+.sik-dropdown>button.dropdown-toggle {
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px 13px;
+  text-align: left;
+  border: 2px solid #09bdb7;
+  background-color: #f5f5f5;
+  color: #aaa;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.sik-dropdown>button.dropdown-toggle::after {
+  position: absolute;
+  right: 1ch;
+  top: calc(50% - 0.2ch);
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.dropdown-menu {
+  border-radius: 15px;
+}
+
+.dropdown-menu {
+  width: 100%;
+  background-color: #454545;
+  box-shadow: 0px 0px 10px #1b1a1a5d;
+}
+
+.sik-dropdown .dropdown-item {
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Apply Now Page CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.applyInput-box {
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  color: rgb(0, 0, 0);
+  background-color: #f5f5f5;
+  border: 2px solid #0abab5;
+  margin: 10px 0px;
+  padding: 10px;
+  /* width: 100%; */
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.applyInput-box:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #b7b7b7;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+
+.applyInput-file {
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  color: #aaa;
+  background-color: #f5f5f5;
+  border: 2px solid #0abab5;
+  border-radius: 10px!important;
+  -webkit-border-radius: 10px!important;
+  -moz-border-radius: 10px!important;
+  -ms-border-radius: 10px!important;
+  -o-border-radius: 10px!important;
+}
+
+.applyText {
+  color: #09bdb7;
+}
+
+input[type=file]::file-selector-button {
+  padding: 10px 50px;
+  color: #fff;
+  background: #0abab5;
+  border: none;
+  /* border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -ms-border-radius: 5px 0px 0px 5px;
+  -o-border-radius: 5px 0px 0px 5px; */
+}
+
+/* input[type=file]::file-selector-button:hover {
+  background-color: #37d2cc;
+} */
+
+::placeholder {
+  color: #aaa;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #aaa;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #aaa;
+}
+
+.applynowText3 {
+  color: #aaa;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # About Us Page CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.aboutHeadingText {
+  font-size: 20px;
+  font-weight: 500;
+  color: #09bdb7;
+}
+
+.aboutText {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.aboutBGone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -999;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.aboutBox {
+  background-image: url("../images/VectorSmartObjectAbout.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.aboutfont {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutText1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Contactus Us Page CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.contactFont {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0abab5;
+}
+
+.contactText {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contactBox {
+  border: 5px solid #0abab5;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.VPText{
+  text-align: center;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Benifits Page CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.BenifitsImg {
+  background-image: url("../images/BenifitsBG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top: -145px;
+  padding: 100px 0px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.benifitsFont {
+  font-size: 55px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.benifitsText {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.BenifitsBG {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.50;
+  z-index: -999;
+}
+
+.benifitsText1 {
+  font-size: 25px;
+  font-weight: 700;
+}   
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Refer Friend Page CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.ReferfriendImg {
+  background-image: url("../images/bg-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top: -142px;
+  padding: 400px 0px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.referfriendBox {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  white-space: none;
+  padding: 20px 0px 20px 0px;
+}
+
+.referfriendFont {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.referfriendText {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.referfriendText1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+.referfriendText2 {
+  color: #4c8280;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.referfriendText3 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.referfriendLine{
+  width: 100%; 
+  height: 1px;
+  background-color: #000;
+}
+
+.combinedFont {
+  font-size: 80px;
+  font-weight: 800;
+  color: #4c8280;
+  line-height: 80px;
+}
+
+.combined {
+  font-size: 85px;
+  font-weight: 800;
+  -webkit-text-stroke: 2px #4c8280;
+  color: #fff;
+  line-height: 80px;
+}
+
+.fa-share-from-square {
+  font-size: 30px;
+}
+
+.shareBox {
+  color: #fff;
+  background-color: var(--btn-color);
+  box-shadow: rgb(0 0 0 / 50%) 0px 3px 8px;
+  border-radius: 50px 0px 0px 50px;
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  z-index: 99999;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-border-radius: 50px 0px 0px 50px;
+  -moz-border-radius: 50px 0px 0px 50px;
+  -ms-border-radius: 50px 0px 0px 50px;
+  -o-border-radius: 50px 0px 0px 50px;
+  padding: 10px 15px 10px 20px;
+}
+.shareBox:before {
+  z-index: -10;
+}
+
+.shareDialog {
+  position: fixed;
+  top: 50%;
+  right: 90px;
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 100ms ease-in;
+  -webkit-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  -ms-transition: opacity 100ms ease-in;
+  -o-transition: opacity 100ms ease-in;
+  transform: translateY(-25%);
+  -webkit-transform: translateY(-25%);
+  -moz-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  -o-transform: translateY(-25%);
+}
+
+.shareDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.share-box {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #e7e7e7;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.share-box>div {
+  padding: 0px;
+}
+
+.DropCol>div {
+  margin: 15px;
+}
+
+
+
+
+
+.main-banner-img {
+  /* z-index: 999; */
+  animation: main-img;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  /* z-index: -99; */
+  transition: all 0.5s;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    # Government Solutions Page CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.TextGov span{
+  font-size: 20px;
+  font-weight: bold;
+  color: #0abab5;
+}
+.ImgLink span{
+  text-decoration: underline;
+  color: #09bdb7;
+}
+.mission{
+  font-size: 21px;
+  color: #0abab5;
+}
+.naicsText{
+  color: #0abab5;
+}
+.ImageSize{
+  width: 300px;
+}
